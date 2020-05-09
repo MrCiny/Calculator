@@ -40,6 +40,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
             this.buttonDecimal = new System.Windows.Forms.Button();
+            this.buttonBackspace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Display
@@ -47,7 +48,7 @@
             this.Display.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display.Location = new System.Drawing.Point(12, 12);
             this.Display.Name = "Display";
-            this.Display.Size = new System.Drawing.Size(252, 46);
+            this.Display.Size = new System.Drawing.Size(253, 46);
             this.Display.TabIndex = 0;
             this.Display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -161,11 +162,23 @@
             this.buttonDecimal.UseVisualStyleBackColor = true;
             this.buttonDecimal.Click += new System.EventHandler(this.buttonDecimal_Click);
             // 
+            // buttonBackspace
+            // 
+            this.buttonBackspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBackspace.Location = new System.Drawing.Point(283, 12);
+            this.buttonBackspace.Name = "buttonBackspace";
+            this.buttonBackspace.Size = new System.Drawing.Size(80, 46);
+            this.buttonBackspace.TabIndex = 2;
+            this.buttonBackspace.Text = "⬅️";
+            this.buttonBackspace.UseVisualStyleBackColor = true;
+            this.buttonBackspace.Click += new System.EventHandler(this.buttonBackspace_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 511);
+            this.ClientSize = new System.Drawing.Size(375, 511);
+            this.Controls.Add(this.buttonBackspace);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
@@ -199,6 +212,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button buttonDecimal;
+        private System.Windows.Forms.Button buttonBackspace;
     }
 }
 
